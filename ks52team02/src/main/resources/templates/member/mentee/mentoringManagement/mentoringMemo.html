@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<header class="header-area header-style-1 header-height-2" th:fragment="hearderFragment">
+	<div class="mobile-promotion">
+		<span>ksmart 52기 2팀 <strong>멘토링을 통한 IT경력개발</strong> 및 <strong>취업성공 </strong> 플랫폼</span>
+	</div>
+</header>
+
+<head>
+	<meta charset="utf-8" />
+	<title>ks52team02 ttt project (teach tech talk)</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="/member/imgs/theme/favicon.svg" />
+	<!-- Template CSS -->
+	<link rel="stylesheet" href="/member/css/plugins/animate.min.css" />
+	<link rel="stylesheet" href="/member/css/plugins/slider-range.css" />
+	<link rel="stylesheet" href="/member/css/main.css?v=5.6" />
+	<!--/* 작업하면서 별도로 추가해야하는 css 파일있으면 team.css에 넣어주세요 */-->
+	<link rel="stylesheet" href="/member/css/mypage.css" />
+</head>
+
+<div class="container">
+	<div class="header-wrap header-space-between position-relative">
+		<div class="logo logo-width-1 d-block d-lg-none header-items" id="hw-header">
+			<img src="/member/imgs/theme/logo.svg" alt="logo" />
+			<h2>멘토링 메모장</h2>
+		</div>
+		<div class="header-action-right d-block d-lg-none">
+		</div>
+	</div>
+</div>
+
+<body>
+	<div class="screen-overlay"></div>
+	<section class="content-main">
+		<div class="card mb-4">
+			<div class="card-body">
+			</div>
+		</div>
+	</section>
+
+
+	<div class="col-md-9" id="hw-md-4">
+		<div class="dashboard-menu">
+			<ul class="nav flex-column" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="account-detail-tab" role="tab" aria-controls="account-detail"
+						aria-selected="true"><i class="fi-rs-user mr-10"></i>오늘일자</a>
+					<div class="square-box">
+
+						<h6> 2024-11-02 </h6>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" id="account-detail-tab" role="tab" aria-controls="account-detail"
+						aria-selected="true"><i class="fi-rs-user mr-10"></i>오늘의 제목</a>
+					<div class="square-box">
+
+						<h6> 프로젝트 오늘부터 1일 </h6>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" id="account-detail-tab" role="tab" aria-controls="account-detail"
+						aria-selected="true"><i class="fi-rs-user mr-10"></i>오늘의 메모</a>
+					<div class="square-box1">
+						<h6 class="memo-text">
+
+							오늘부터 포트폴리오 준비1일 <br>
+							포트폴리오 준비는 시간과 노력이 많이 드는 과정이지만,<br>
+							그 가치는 매우 큽니다. 잘 준비된 포트폴리오는 지원자의<br>
+							전문성과 창의성을 효과적으로 보여줄 수 있으며, <br>
+							취업 시장에서 경쟁력을 갖추는 데 큰 도움이 됩니다.<br>
+							포트폴리오는 지원자가 직접 수행한 프로젝트나 작업물을<br>
+							통해 자신의 역량을 입증할 수 있는 기회를 제공합니다.<br>
+							왜냐하면 포트폴리오를 통해 면접관은 지원자의 실제 역량과<br>
+							경험을 직접 확인할 수 있기 때문입니다.<br>
+							또한, 포트폴리오 준비 과정에서 자신의 경력을 되돌아보고,<br>
+							강점과 관심 분야를 명확히 할 수 있습니다.<br>
+							이는 지원자가 자신의 커리어 목표를 더욱 명확히 설정하는<br>
+							데 도움이 됩니다. 마지막으로, 포트폴리오는 면접 시에도<br>
+							유용하게 사용될 수 있습니다.<br>
+							지원자는 면접관에게 직접 작업물을 보여주며 설명할 수 있으며,<br>
+							이는 면접의 질을 한층 더 높일 수 있습니다.<br>
+							따라서, 포트폴리오 준비는 취업 준비 과정에서<br>
+							매우 중요한 부분을 차지합니다.<br>
+							잘 준비된 포트폴리오 하나가 지원자의 취업 성공에<br>
+							큰 영향을 미칠 수 있습니다.</h6>
+					</div>
+				</li><br><br><br>
+
+				<div id="hw-mmm-1">
+					<button class="btn btn-md rounded font-sm hover-up" id="updateBtn-hw-1">수정</button>
+				</div>
+
+
+
+			</ul>
+		</div>
+	</div>
+
+	<th:block layout:fragment="customJs">
+		<script>
+			document.getElementById('updateBtn-hw-1').addEventListener('click', function () {
+				// 사용자에게 확인 창을 띄움
+				var result = confirm("수정하시겠습니까?");
+				if (result) {
+					// 확인 버튼을 누르면 수정 로직 실행 (예: AJAX 요청이나 폼 제출)
+					alert("수정이 완료되었습니다."); // 이 부분에 실제 수정 코드를 추가
+				} else {
+					// 취소 버튼을 누르면 아무런 작업도 하지 않음
+					alert("수정이 취소되었습니다.");
+				}
+			});
+		</script>
+	</th:block>
+
+
+
+</body>
+
+</html>

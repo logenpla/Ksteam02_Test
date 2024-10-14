@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<header class="header-area header-style-1 header-height-2" th:fragment="hearderFragment">
+	<div class="mobile-promotion">
+		<span>ksmart 52기 2팀 <strong>멘토링을 통한 IT경력개발</strong> 및 <strong>취업성공 </strong> 플랫폼</span>
+	</div>
+</header>
+
+<head>
+	<meta charset="utf-8" />
+	<title>ks52team02 ttt project (teach tech talk)</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="/member/imgs/theme/favicon.svg" />
+	<!-- Template CSS -->
+	<link rel="stylesheet" href="/member/css/plugins/animate.min.css" />
+	<link rel="stylesheet" href="/member/css/plugins/slider-range.css" />
+	<link rel="stylesheet" href="/member/css/main.css?v=5.6" />
+	<!--/* 작업하면서 별도로 추가해야하는 css 파일있으면 team.css에 넣어주세요 */-->
+	<link rel="stylesheet" href="/member/css/mypage.css" />
+</head>
+
+<div class="container">
+	<div class="header-wrap header-space-between position-relative">
+		<div class="logo logo-width-1 d-block d-lg-none header-items" id="hw-header">
+			<img src="/member/imgs/theme/logo.svg" alt="logo" />
+			<h2>멘토링 상세 내역</h2>
+		</div>
+		<div class="header-action-right d-block d-lg-none">
+		</div>
+	</div>
+</div>
+
+<body>
+	<div class="screen-overlay"></div>
+	<section class="content-main">
+		<div class="card mb-4">
+			<div class="card-header bg-brand-2" id="hw-md-1" >
+				<h4>
+					< Introduce Mentor>
+				</h4><br>
+				<h6>꿀을 무척 좋아하는 주인공 곰. 느긋한 성격을 지녔으나 기억력이 나쁘다.<br>
+					시나 노래를 만드는 것을 좋아한다.<br>
+					바보스러워 보이지만 위기상황에 똑똑한 말을 하기도 한다.<br>
+					크리스토퍼 로빈(Christopher Robin)이 가장 좋아하는 인형</h6>
+
+			</div>
+			<div class="card-body">
+				<div class="row">
+					<div class="col-xl col-lg flex-grow-0" style="flex-basis: 230px">
+						<div class="img-thumbnail" id="hw-md-3">
+							<class="center-xy img-fluid" alt="Logo Brand" />
+						</div>
+					</div>
+					<!--  col.// -->
+					<div class="col-xl col-lg">
+						<h3>Mentor Pooh.</h3>
+					</div>
+					<div id="hw-md-2">
+						<h4 style="margin-bottom: 15px;">
+							< Major Career>
+						</h4>
+						<h6>곰돌이 푸의 모험 (1977)<br>
+							곰돌이 푸의 새로운 모험 (1988~1991)<br>
+							곰돌이 푸: 크리스토퍼 로빈을 찾아서 (1997)<br>
+							곰돌이 푸: 우리들의 발렌타인 데이 (1999)<br>
+							곰돌이 푸: 겨울이 찾아왔어요 (1999)<br>
+							곰돌이 푸: 티거 무비 (2000)<br>
+							이야기 나라 곰돌이 푸: 여섯 가지 소중한 마음 (2001)<br>
+							곰돌이 푸: 즐거운 크리스마스! 즐거운 새해!(2002)<br>
+							곰돌이 푸: 피글렛 빅 무비 (2003)<br></h6>
+
+					</div>
+				</div>
+			</div>
+	</section>
+
+
+	<div class="col-md-9" id="hw-md-4">
+		<div class="dashboard-menu">
+			<ul class="nav flex-column" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="account-detail-tab" role="tab" aria-controls="account-detail"
+						aria-selected="true"><i class="fi-rs-user mr-10"></i>신청한 멘토링</a>
+					<div class="square-box">
+
+						<h6> 포트폴리오 마스터를 원하신다면 팔로우 미!!</h6>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" id="account-detail-tab" role="tab" aria-controls="account-detail"
+						aria-selected="true"><i class="fi-rs-user mr-10"></i>멘토 이메일</a>
+					<div class="square-box">
+						<h6> Ksmart52Pooh@naver.com </h6>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" id="account-detail-tab" role="tab" aria-controls="account-detail"
+						aria-selected="true"><i class="fi-rs-user mr-10"></i>멘토링 일정</a>
+					<div class="square-box">
+
+						<h6> 2024-12-12 18:00-19:00 </h6>
+						<a href="javascript:void(0);"
+							onclick="openDetailPopup('/management/mentoringMemoWrite')"
+							class="btn btn-md rounded font-sm" id="hw-mcd-2">click</a>
+					</div>
+					<div class="square-box">
+						
+						<h6> 2024-12-13 19:00-20:00</h6>
+						<a href="javascript:void(0);"
+							onclick="openDetailPopup('/management/mentoringMemoWrite')"
+							class="btn btn-md rounded font-sm" id="hw-mcd-2">click</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" id="account-detail-tab" role="tab" aria-controls="account-detail"
+						aria-selected="true"><i class="fi-rs-user mr-10" ></i>멘토링 시간</a>
+					<div class="square-box">
+
+						<h6> 1시간 </h6>
+						
+					</div>
+					<div class="square-box">
+
+						<h6> 1시간 </h6>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" id="account-detail-tab" role="tab" aria-controls="account-detail"
+						aria-selected="true"><i class="fi-rs-user mr-10"></i>결제일</a>
+					<div class="square-box">
+
+						<h6> 2024-12-10 22:22 </h6>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" id="account-detail-tab" role="tab" aria-controls="account-detail"
+						aria-selected="true"><i class="fi-rs-user mr-10"></i>결제 수단</a>
+					<div class="square-box">
+
+						<h6> 계좌이체 </h6>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" id="account-detail-tab" role="tab" aria-controls="account-detail"
+						aria-selected="true"><i class="fi-rs-user mr-10"></i>결제 금액</a>
+					<div class="square-box">
+
+						<h6> 70,000원 </h6>
+					</div>
+				</li><br><br><br>
+			</ul>
+		</div>
+	</div>
+<script type="text/javascript">
+  function openDetailPopup(url) {
+    // 팝업 창을 열고 해당 URL로 이동
+    window.open(url, '_blank', 'width=800,height=850,scrollbars=yes');
+  }
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{manager/layouts/layout}">
+
+<head>
+	<link rel="stylesheet" href="/manager/css/mypage.css">
+</head>
+
+<th:block layout:fragment="customContent">
+	<section id="contentMain" class="content-main">
+		<div>
+			<h2 class="content-title card-title">멘토링시간별 기록조회</h2>
+			<p id="hw-manager-goalset-2">멘토링시간별 기록조회화면</p>
+		</div>
+		</div>
+		<div class="card mb-4">
+			<!-- card-header end// -->
+			<div class="card-body">
+				<div class="table-responsive">
+					<table id="hw-manager-goalset-1" class="table table-hover">
+						<thead>
+							<tr>
+								<th>결제후 시간별 내용기록코드</th>
+								<th>멘토링공지코드</th>
+								<th>멘토링 모집공고 상세코드</th>
+								<th>멘티아이디</th>
+								<th>멘토링 진행내용</th>
+								<th>등록일자</th>
+								<th>멘토링 진행상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>SAMP_content_record_code_01</td>
+								<td>mentoring_notice_code_01</td>
+								<td>mentoring_notice_detail_code_01</td>
+								<td>mentee001</td>
+								<td>친절하면서도 꼼꼼한 멘토링 최고!!</td>
+								<td>2024-09-10</td>
+								<td> 멘토링 진행 완료</td>
+							</tr>
+
+						</tbody>
+
+						<tbody>
+							<tr>
+								<td>SAMP_content_record_code_02</td>
+								<td>mentoring_notice_code_01</td>
+								<td>mentoring_notice_detail_code_16</td>
+								<td>mentee003</td>
+								<td>전반적인 흐름을 알수있도록 노력!!</td>
+								<td>2024-10-15</td>
+								<td>멘토링 진행 전</td>
+							</tr>
+
+						</tbody>
+
+
+						
+						
+						
+						
+
+
+					</table>
+				</div>
+				<!-- table-responsive//end -->
+			</div>
+			<!-- card-body end// -->
+		</div>
+		<div class="pagination-area mt-30 mb-50">
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-start">
+					<li class="page-item active"><a class="page-link" href="#">01</a></li>
+					<li class="page-item"><a class="page-link" href="#">02</a></li>
+					<li class="page-item"><a class="page-link" href="#">03</a></li>
+					<li class="page-item"><a class="page-link dot" href="#">...</a></li>
+					<li class="page-item"><a class="page-link" href="#">16</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#"><i class="material-icons md-chevron_right"></i></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+	<!-- content-main end// -->
+</th:block>
+
+</html>

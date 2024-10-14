@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{member/layouts/layout}">
+<head>
+<link rel="stylesheet" href="/member/css/mypage.css">
+</head>
+
+<th:block class="main" layout:fragment="customContent">
+	<div class="page-content pt-150 pb-150 hw-mr-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 m-auto">
+					<div class="col-md-3">
+						<div class="dashboard-menu">
+							<ul class="nav flex-column" role="tablist">
+								<li class="nav-item">
+									<!-- <a class="nav-link active" id="account-detail-tab" data-bs-toggle="tab" href="/mentor/mypageAccount" role="tab" aria-controls="account-detail" aria-selected="true"><i class="fi-rs-user mr-10"></i>계정 정보</a>-->
+									<a class="nav-link active" id="account-detail-tab"
+									href="/management/mentoringCheck" role="tab"
+									aria-controls="account-detail" aria-selected="true"><i
+										class="fi-rs-user mr-10"></i>멘토링 신청 내역</a>
+								</li>
+								<li class="nav-item">
+									<!--<a class="nav-link" id="orders-tab" data-bs-toggle="tab" href="/mentor/mypageCareer" role="tab" aria-controls="orders" aria-selected="false"><i class="fi-rs-shopping-bag mr-10"></i>경력 관리</a>-->
+									<a class="nav-link" id="orders-tab"
+									href="/management/mentoringMemoList" aria-controls="orders"
+									aria-selected="false"><i class="fi-rs-shopping-bag mr-10"></i>메모장
+										리스트</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/payment/paymentList"><i class="fi-rs-shopping-bag mr-10"></i>결제 내역</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/review/reviewList"><i class="fi-rs-shopping-bag mr-10"></i>내가 쓴 후기 조회</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 왼쪽: 제목과 설명 부분 -->
+					<div id="hw-sg1">
+
+
+						<div class="content-header">
+						</div>
+						<div class="row justify-content-end">
+							<div class="col-lg-2 col-md-3 col-6" id="hw-mc-2">
+								<select class="form-select">
+									<option>Status</option>
+									<option>Active</option>
+									<option>Disabled</option>
+									<option>Show all</option>
+								</select>
+							</div>
+							<div class="col-lg-2 col-md-3 col-6" id="hw-mc-3">
+								<select class="form-select">
+									<option>Show 20</option>
+									<option>Show 30</option>
+									<option>Show 40</option>
+								</select>
+							</div>
+						</div>
+
+
+						<div class="card-body" id="hw-card-body">
+							<div class="table-responsive">
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<th class="hw-category-column">카테고리</th>
+											<th class="hw-mentoring-column">신청한 멘토링</th>
+											<th>멘토명</th>
+											<th>진행상태</th>
+											<th>결제일</th>
+											<th>상세정보</th>
+											<th>메모장</th>
+											<!-- 진행 상태에 따라사 후기 등록 버튼 활성 비활성 해야함 -->
+											<th>후기 등록</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>포트폴리오</td>
+											<td>나도 포트폴리오 마스터!!</td>
+											<td>홍길동</td>
+											<td><span class="badge rounded-pill alert-success">진행전</span></td>
+											<td>2024-11-11</td>
+											<td><a href="javascript:void(0);"
+												onclick="openDetailPopup('/management/mentoringDetail')"
+												class="btn btn-md rounded font-sm">click</a></td>
+											<td><a href="javascript:void(0);"
+												onclick="openDetailPopup('/management/mentoringMemoWrite')"
+												class="btn btn-md rounded font-sm">click</a></td>
+											<td><a href="/review/reviewForm" class="btn btn-md rounded font-sm">후기 등록</a></td>
+										</tr>
+										<tr>
+											<td>포트폴리오</td>
+											<td>나도 포트폴리오 마스터!!</td>
+											<td>홍길동</td>
+											<td><span class="badge rounded-pill alert-success">진행전</span></td>
+											<td>2024-11-12</td>
+											<td><a href="javascript:void(0);"
+												onclick="openDetailPopup('/management/mentoringDetail')"
+												class="btn btn-md rounded font-sm">click</a></td>
+											<td><a href="#" class="btn btn-md rounded font-sm">click</a>
+											</td>
+										</tr>
+										<tr>
+											<td>포트폴리오</td>
+											<td>나도 포트폴리오 마스터!!</td>
+											<td>홍길동</td>
+											<td><span class="badge rounded-pill alert-danger">진행중</span></td>
+											<td>2024-11-13</td>
+											<td><a href="javascript:void(0);"
+												onclick="openDetailPopup('/management/mentoringDetail')"
+												class="btn btn-md rounded font-sm">click</a></td>
+											<td><a href="#" class="btn btn-md rounded font-sm">click</a>
+											</td>
+										</tr>
+										<tr>
+											<td>자격증</td>
+											<td>정보처리기사 뽀개기!!</td>
+											<td>이순신</td>
+											<td><span class="badge rounded-pill alert-danger">진행중</span></td>
+											<td>2024-11-14</td>
+											<td><a href="javascript:void(0);"
+												onclick="openDetailPopup('/management/mentoringDetail')"
+												class="btn btn-md rounded font-sm">click</a></td>
+											<td><a href="#" class="btn btn-md rounded font-sm">click</a>
+											</td>
+										</tr>
+										<tr>
+											<td>자격증</td>
+											<td>정보처리기사 뽀개기!!</td>
+											<td>이순신</td>
+											<td><span class="badge rounded-pill alert-warning">진행완료</span></td>
+											<td>2024-11-15</td>
+											<td><a href="javascript:void(0);"
+												onclick="openDetailPopup('/management/mentoringDetail')"
+												class="btn btn-md rounded font-sm">click</a></td>
+											<td><a href="#" class="btn btn-md rounded font-sm">click</a>
+											</td>
+										</tr>
+										<tr>
+											<td>기타</td>
+											<td>자바 만시간의 법칙</td>
+											<td>세종대왕</td>
+											<td><span class="badge rounded-pill alert-warning">진행완료</span></td>
+											<td>2024-11-16</td>
+											<td><a href="javascript:void(0);"
+												onclick="openDetailPopup('/management/mentoringDetail')"
+												class="btn btn-md rounded font-sm">click</a></td>
+											<td><a href="#" class="btn btn-md rounded font-sm">click</a>
+											</td>
+										</tr>
+
+
+										<tr>
+											<td>기타</td>
+											<td>자바 만시간의 법칙</td>
+											<td>세종대왕</td>
+											<td><span class="badge rounded-pill alert-success">진행전</span></td>
+											<td>2024-11-17</td>
+											<td><a href="javascript:void(0);"
+												onclick="openDetailPopup('/management/mentoringDetail')"
+												class="btn btn-md rounded font-sm">click</a></td>
+											<td><a href="#" class="btn btn-md rounded font-sm">click</a>
+											</td>
+										</tr>
+										<tr>
+											<td>면접</td>
+											<td>면접 한방에 끝내기</td>
+											<td>정약용</td>
+											<td><span class="badge rounded-pill alert-warning">진행완료</span></td>
+											<td>2024-11-18</td>
+											<td><a href="javascript:void(0);"
+												onclick="openDetailPopup('/management/mentoringDetail')"
+												class="btn btn-md rounded font-sm">click</a></td>
+											<td><a href="#" class="btn btn-md rounded font-sm">click</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- table-responsive //end -->
+						</div>
+						<!-- card-body end// -->
+					</div>
+					<!-- card end// -->
+				</div>
+			</div>
+			<div class="pagination-area mt-20 mb-20" id="hw-mc-4">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination justify-content-center">
+						<li class="page-item"><a class="page-link" href="#"><i
+								class="fi-rs-arrow-small-left"></i></a></li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item active"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link dot" href="#">...</a></li>
+						<li class="page-item"><a class="page-link" href="#">6</a></li>
+						<li class="page-item"><a class="page-link" href="#"><i
+								class="fi-rs-arrow-small-right"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</th:block>
+<th:block layout:fragment="customJs">
+	<script type="text/javascript">
+		function openDetailPopup(url) {
+			var popupWidth = 775;  // 팝업창 너비
+			var popupHeight = 800;  // 팝업창 높이
+			var popupX = (window.screen.width / 2) - (popupWidth / 2);  // 화면 중앙에 팝업창 위치
+			var popupY = (window.screen.height / 2) - (popupHeight / 2);  // 화면 중앙에 팝업창 위치
+
+			window.open(url, "Mentee Mypage Account", "width=" + popupWidth + ", height=" + popupHeight + ", top=" + popupY + ", left=" + popupX);
+		}
+	</script>
+</th:block>
+
+</html>

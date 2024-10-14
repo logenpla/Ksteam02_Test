@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{manager/layouts/layout}">
+
+<head>
+	<link rel="stylesheet" href="/manager/css/mypage.css">
+</head>
+
+<th:block layout:fragment="customContent">
+	<section id="contentMain4" class="content-main">
+		<div>
+			<h2 class="content-title card-title">멘토링 진행 상태 조회</h2>
+			<p id="hw-manager-goalset-2">멘토링 진행상태 조회화면</p>
+		</div>
+		</div>
+		<div class="card mb-4">
+			<!-- card-header end// -->
+			<div class="card-body">
+				<div class="table-responsive">
+					<table id="hw-manager-goalset-1" class="table table-hover">
+						<thead>
+							<tr>
+								<th>멘티결제 및 멘토정산코드</th>
+								<th>멘토공지코드</th>
+								<th>멘티쿠폰 보유현황코드</th>
+								<th>결제아이디</th>
+								<th>할인전 결제금액</th>
+								<th>멘티쿠폰</th>
+								<th>최종결제금액</th>
+								<th>결제일시</th>
+								<th>결제방법</th>
+								<th>플랫폼 수수료</th>
+								<th>멘토정산금액</th>
+								<th>최종플랫폼 매출금액</th>
+								<th>멘토정산상태</th>
+								<th>멘토 정산완료일자</th>
+								<th>멘토링 진행상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>mentee_settlement_mentor_calculation_code_01</td>
+								<td>mentoring_notice_code_01</td>
+								<td>mentee_coupon_holding_status_code_01</td>
+								<td>mentee001</td>
+								<td>50000</td>
+								<td>1000</td>
+								<td>49000</td>
+								<td>2024-09-07 18:00:00</td>
+								<td>카드</td>
+								<td>10%</td>
+								<td>44100</td>
+								<td>4900</td>
+								<td>멘토정산완료</td>
+								<td>2024-09-12 19:00:12</td>
+								<td>정산종료</td>
+							</tr>
+
+						</tbody>
+
+						<tbody>
+							<tr>
+								<td>mentee_settlement_mentor_calculation_code_02</td>
+								<td>mentoring_notice_code_02</td>
+								<td>NULL</td>
+								<td>mentee003</td>
+								<td>60000</td>
+								<td>0</td>
+								<td>60000</td>
+								<td>2024-10-08 19:00:00</td>
+								<td>카드</td>
+								<td>10%</td>
+								<td>54000</td>
+								<td>6000</td>
+								<td>멘토정산 전</td>
+								<td>NULL</td>
+								<td>멘토링시작전</td>
+							</tr>
+						</tbody>
+
+
+						<tbody>
+							<tr>
+								<td>mentee_settlement_mentor_calculation_code_03</td>
+								<td>mentoring_notice_code_01</td>
+								<td>NULL</td>
+								<td>mentee004</td>
+								<td>60000</td>
+								<td>0</td>
+								<td>60000</td>
+								<td>2024-09-07 12:00:00</td>
+								<td>카드</td>
+								<td>10%</td>
+								<td>54000</td>
+								<td>6000</td>
+								<td>멘토정산 전</td>
+								<td>NULL</td>
+								<td>멘토링 진행중</td>
+							</tr>
+						</tbody>
+
+						<tbody>
+							<tr>
+								<td>mentee_settlement_mentor_calculation_code_04</td>
+								<td>mentoring_notice_code_01</td>
+								<td>NULL</td>
+								<td>mentee004</td>
+								<td>60000</td>
+								<td>0</td>
+								<td>60000</td>
+								<td>2024-09-17 12:00:00</td>
+								<td>카드</td>
+								<td>10%</td>
+								<td>54000</td>
+								<td>6000</td>
+								<td>멘토정산 전</td>
+								<td>NULL</td>
+								<td>멘토링 진행전</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>mentee_settlement_mentor_calculation_code_05</td>
+								<td>mentoring_notice_code_02</td>
+								<td>NULL</td>
+								<td>mentee005</td>
+								<td>60000</td>
+								<td>0</td>
+								<td>60000</td>
+								<td>2024-09-27 12:00:00</td>
+								<td>카드</td>
+								<td>10%</td>
+								<td>54000</td>
+								<td>6000</td>
+								<td>멘토정산 전</td>
+								<td>NULL</td>
+								<td>멘토링 진행전</td>
+							</tr>
+						</tbody>
+
+						<tbody>
+							<tr>
+								<td>mentee_settlement_mentor_calculation_code_06</td>
+								<td>mentoring_notice_code_02</td>
+								<td>NULL</td>
+								<td>mentee001</td>
+								<td>60000</td>
+								<td>0</td>
+								<td>60000</td>
+								<td>2024-09-13 13:30:00</td>
+								<td>카드</td>
+								<td>10%</td>
+								<td>54000</td>
+								<td>6000</td>
+								<td>멘토정산 전</td>
+								<td>NULL</td>
+								<td>멘토링 시작전</td>
+							</tr>
+						</tbody>
+
+
+					</table>
+				</div>
+				<!-- table-responsive//end -->
+			</div>
+			<!-- card-body end// -->
+		</div>
+		<div class="pagination-area mt-30 mb-50">
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-start">
+					<li class="page-item active"><a class="page-link" href="#">01</a></li>
+					<li class="page-item"><a class="page-link" href="#">02</a></li>
+					<li class="page-item"><a class="page-link" href="#">03</a></li>
+					<li class="page-item"><a class="page-link dot" href="#">...</a></li>
+					<li class="page-item"><a class="page-link" href="#">16</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#"><i class="material-icons md-chevron_right"></i></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+	<!-- content-main end// -->
+</th:block>
+
+</html>

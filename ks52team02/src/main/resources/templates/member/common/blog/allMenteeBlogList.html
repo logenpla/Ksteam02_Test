@@ -1,0 +1,295 @@
+﻿
+<!DOCTYPE HTML>
+<xmlns:th="http: //www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{/member/layouts/layout}">
+
+	<head>
+		<link rel="stylesheet" href="/member/css/mypage.css">
+	</head>
+
+	<th:block class="main" layout:fragment="customContent">
+		<div class="page-header mt-30 mb-75">
+			<div class="container">
+				<div class="archive-header">
+					<div class="row align-items-center">
+						<div class="col-xl-3">
+							<h1 class="mb-15">블로그</h1>
+							<div class="breadcrumb">
+								<a href="/" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+								<span></span> 블로그
+							</div>
+						</div>
+						<div class="col-xl-9 text-end d-none d-xl-block">
+							<ul class="tags-list">
+								<li class="hover-up">
+									<a href="blog-category-grid.html">포트폴리오</a>
+								</li>
+								<li class="hover-up">
+									<a href="blog-category-grid.html"></i>자격증</a>
+								</li>
+								<li class="hover-up active">
+									<a href="blog-category-grid.html">공인어학</a>
+								</li>
+								<li class="hover-up">
+									<a href="blog-category-grid.html">자소서</a>
+								</li>
+								<li class="hover-up">
+									<a href="blog-category-grid.html">면접</a>
+								</li>
+								<li class="hover-up mr-0">
+									<a href="blog-category-grid.html">이직</a>
+								</li>
+								<li class="hover-up mr-0">
+									<a href="blog-category-grid.html">기타</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-content mb-50">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9" id="hw-ab1">
+						<div class="shop-product-fillter mb-50 pr-30">
+							<div class="sort-by-product-area" id="hw-ab5">
+								<div class="sort-by-cover mr-10">
+									<div class="sort-by-product-wrap" id="hw-ab6">
+										<div class="sort-by-dropdown-wrap">
+											<span>20개 <i class="fi-rs-angle-small-down"></i></span>
+										</div>
+									</div>
+									<div class="sort-by-dropdown">
+										<ul>
+											<li><a class="active" href="#">20개 </a></li>
+											<li><a href="#">40개</a></li>
+											<li><a href="#">60개</a></li>
+
+										</ul>
+									</div>
+								</div>
+
+								<div class="sort-by-cover mr-20" id="hw-ab7">
+									<div class="sort-by-product-wrap" id="hw-ab8">
+
+										<div class="sort-by-dropdown-wrap">
+											<span>최신순 <i class="fi-rs-angle-small-down"></i></span>
+										</div>
+									</div>
+									<div class="sort-by-dropdown">
+										<ul>
+											<li><a class="active" href="#">최신순</a></li>
+											<li><a href="#">조회순</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- 검색창 추가 -->
+								<div class="search-form" id="hw-ab9">
+									<form action="#">
+										<input id="hw-ab10" type="text" placeholder="Search…">
+										<button type="submit"><i class="fi-rs-search"></i></button>
+									</form>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="loop-grid pr-30" id="hw-ab11">
+						<div class="row">
+
+
+						
+							
+							
+							<article class="col-xl-3 col-lg-6 col-md-6 text-center hover-up mb-30 animated article-clickable" data-href="/mypage/myBlogExample">
+							            <div class="hw-cp-1">
+							            </div>
+							    <div class="entry-content-2">
+							        <h6 class="mb-10 font-sm">자바원리</h6>
+							        <h4 class="post-title mb-15">
+							            <div>자바 뽀개기 제1탄!!</div>
+							        </h4>
+							        <div class="entry-meta font-xs color-grey mt-10 pb-10">
+							            <div>
+							                <span class="post-on mr-10">25 April 2022</span>
+							                <span class="hit-count has-dot mr-10">126k Views</span>
+							                <span class="hit-count has-dot">4 mins read</span>
+							            </div>
+							        </div>
+							    </div>
+							</article>
+
+							
+							
+							
+							
+							
+
+							<article class="col-xl-3 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
+								<div class="post-thumb">
+									<a href="blog-post-right.html">
+										<div class="hw-cp-2">
+											<img class="border-radius-15" alt="" />
+										</div>
+									</a>
+								</div>
+								<div class="entry-content-2">
+									<h6 class="mb-10 font-sm"><a class="entry-meta text-muted"
+											href="blog-category-grid.html">자바원리</a></h6>
+									<h4 class="post-title mb-15">
+										<a href="blog-post-right.html">자바 뽀개기 제2탄!!</a>
+									</h4>
+									<div class="entry-meta font-xs color-grey mt-10 pb-10">
+										<div>
+											<span class="post-on mr-10">25 April 2022</span>
+											<span class="hit-count has-dot mr-10">126k Views</span>
+											<span class="hit-count has-dot">4 mins read</span>
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="col-xl-3 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
+								<div class="post-thumb">
+									<a href="blog-post-right.html">
+										<div class="hw-cp-3">
+											<img class="border-radius-15" alt="" />
+										</div>
+									</a>
+								</div>
+								<div class="entry-content-2">
+									<h6 class="mb-10 font-sm"><a class="entry-meta text-muted"
+											href="blog-category-grid.html">스프링원리</a></h6>
+									<h4 class="post-title mb-15">
+										<a href="blog-post-right.html">스프링원리 제1탄</a>
+									</h4>
+									<div class="entry-meta font-xs color-grey mt-10 pb-10">
+										<div>
+											<span class="post-on mr-10">25 April 2022</span>
+											<span class="hit-count has-dot mr-10">126k Views</span>
+											<span class="hit-count has-dot">4 mins read</span>
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="col-xl-3 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
+								<div class="post-thumb">
+									<a href="blog-post-right.html">
+										<div class="hw-cp-6">
+											<img class="border-radius-15" alt="" />
+										</div>
+									</a>
+								</div>
+								<div class="entry-content-2">
+									<h6 class="mb-10 font-sm"><a class="entry-meta text-muted"
+											href="blog-category-grid.html">스프링원리</a></h6>
+									<h4 class="post-title mb-15">
+										<a href="blog-post-right.html">스프링원래 제2탄</a>
+									</h4>
+									<div class="entry-meta font-xs color-grey mt-10 pb-10">
+										<div>
+											<span class="post-on mr-10">25 April 2022</span>
+											<span class="hit-count has-dot mr-10">126k Views</span>
+											<span class="hit-count has-dot">4 mins read</span>
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="col-xl-3 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
+								<div class="post-thumb">
+									<a href="blog-post-right.html">
+										<div class="hw-cp-5">
+											<img class="border-radius-15" alt="" />
+										</div>
+									</a>
+								</div>
+								<div class="entry-content-2">
+									<h6 class="mb-10 font-sm"><a class="entry-meta text-muted"
+											href="blog-category-grid.html">데이터베이스란</a></h6>
+									<h4 class="post-title mb-15">
+										<a href="blog-post-right.html">* 데이스베이스 요소 *</a>
+									</h4>
+									<div class="entry-meta font-xs color-grey mt-10 pb-10">
+										<div>
+											<span class="post-on mr-10">25 April 2022</span>
+											<span class="hit-count has-dot mr-10">126k Views</span>
+											<span class="hit-count has-dot">4 mins read</span>
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="col-xl-3 col-lg-6 col-md-6 text-center hover-up mb-30 animated">
+								<div class="post-thumb">
+									<a href="blog-post-right.html">
+										<div class="hw-cp-4">
+											<img class="border-radius-15" alt="" />
+										</div>
+									</a>
+								</div>
+								<div class="entry-content-2">
+									<h6 class="mb-10 font-sm"><a class="entry-meta text-muted"
+											href="blog-category-grid.html">데이터베이스란</a></h6>
+									<h4 class="post-title mb-15">
+										<a href="blog-post-right.html">* 데이터베이스 문법 *</a>
+									</h4>
+									<div class="entry-meta font-xs color-grey mt-10 pb-10">
+										<div>
+											<span class="post-on mr-10">25 April 2022</span>
+											<span class="hit-count has-dot mr-10">126k Views</span>
+											<span class="hit-count has-dot">4 mins read</span>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="pagination-area mt-15 mb-sm-5 mb-lg-0">
+						<nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-center">
+								<li class="page-item">
+									<a class="page-link" href="#"><i class="fi-rs-arrow-small-left"></i></a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item active"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link dot" href="#">...</a></li>
+								<li class="page-item"><a class="page-link" href="#">6</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#"><i class="fi-rs-arrow-small-right"></i></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-lg-3 primary-sidebar sticky-sidebar">
+
+				</div>
+			</div>
+		</div>
+		<th:block layout:fragment="customJs">
+			<script>
+			    document.addEventListener('DOMContentLoaded', function () {
+			        // 모든 'article-clickable' 클래스가 적용된 article 요소를 선택
+			        const articles = document.querySelectorAll('.article-clickable');
+
+			        articles.forEach(function(article) {
+			            // article 클릭 시 해당 data-href로 이동
+			            article.addEventListener('click', function(event) {
+			                // a 태그를 클릭했을 때는 article의 이동 기능을 무시함
+			                if (!event.target.closest('a')) {
+			                    const url = article.getAttribute('data-href');
+			                    window.location.href = url;
+			                }
+			            });
+			        });
+			    });
+			</script>
+	</th:block>
+	</th:block>
+
+	</html>
