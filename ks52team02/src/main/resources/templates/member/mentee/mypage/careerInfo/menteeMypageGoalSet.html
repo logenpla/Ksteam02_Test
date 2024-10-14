@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{member/layouts/layout}">
+
+	<head>
+		<link rel="stylesheet" href="/member/css/mypage.css">
+	</head>
+
+	<th:block class="main" layout:fragment="customContent">
+		<div class="page-content pt-150 pb-150">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 m-auto">
+						<div class="col-md-3">
+							<div class="dashboard-menu">
+
+								<ul class="nav flex-column" role="tablist">
+									<li class="nav-item">
+										<!-- <a class="nav-link active" id="account-detail-tab" data-bs-toggle="tab" href="/mentor/mypageAccount" role="tab" aria-controls="account-detail" aria-selected="true"><i class="fi-rs-user mr-10"></i>계정 정보</a>-->
+										<a class="nav-link" id="account-detail-tab" href="/mypage/menteeAccount"
+											role="tab" aria-controls="account-detail" aria-selected="true"><i
+												class="fi-rs-user mr-10"></i>계정 정보</a>
+									</li>
+									<li class="nav-item">
+										<!--<a class="nav-link" id="orders-tab" data-bs-toggle="tab" href="/mentor/mypageCareer" role="tab" aria-controls="orders" aria-selected="false"><i class="fi-rs-shopping-bag mr-10"></i>경력 관리</a>-->
+										<a class="nav-link" id="orders-tab" href="/mypage/menteeIntroduce"
+											aria-controls="orders" aria-selected="false"><i
+												class="fi-rs-shopping-bag mr-10"></i>소개글</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="track-orders-tab" href="/mypage/menteeCareer"
+											aria-controls="track-orders" aria-selected="false"><i
+												class="fi-rs-shopping-cart-check mr-10"></i>경력 관리</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" id="address-tab" href="/mypage/menteeGoalSet"
+											role="tab" aria-controls="address" aria-selected="true"><i
+												class="fi-rs-marker mr-10"></i>목표 설정</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="address-tab" href="/mypage/menteeGoalSetting" role="tab"
+											aria-controls="address" aria-selected="true"><i
+												class="fi-rs-marker mr-10"></i>목표 조회</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="address-tab" href="/mypage/menteeBlog" role="tab"
+											aria-controls="address" aria-selected="true"><i
+												class="fi-rs-marker mr-10"></i>블로그</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+						
+						
+
+						<div class="col-lg-11" id="hw-gs2">
+							<div id=hw-gs2_1>
+								<div id="hw-gs2_2">
+									<div class="row">
+										<div class="col-md-3">
+											<h6 id="hw-gs2_3">1. 목표 제목</h6>
+										</div>
+										<div class="col-md-9"></div> <!-- 빈 칸을 둠 -->
+									</div> <!-- row.// -->
+
+									<!-- 제목 입력 필드를 목표 제목 밑에 배치 -->
+									<div class="row">
+										<div class="col-md-12">
+											<div class="mb-4">
+												<input type="text" placeholder="제목 입력" class="form-control">
+											</div>
+										</div> <!-- col.// -->
+									</div> <!-- row.// -->
+									<hr class="mb-4 mt-0">
+									<div class="row">
+										<div class="col-md-4">
+											<h6 id="hw-gs2_4">2. 목표 진행 상태</h6>
+										</div>
+										<div class="mb-4">
+											<select class="form-select">
+												<option> 진행전 </option>
+												<option> 진행중 </option>
+												<option> 진행완료 </option>
+											</select>
+										</div>
+									</div> <!-- row.// -->
+									<hr class="mb-4 mt-0">
+									<div class="row">
+										<div class="col-md-3">
+											<h6>3. 카테고리</h6>
+										</div>
+										<div class="col-md-9">
+											<div class="mb-4">
+												<label class="mb-2 form-check form-check-inline">
+													<input class="form-check-input" checked="" name="mycategory"
+														type="radio">
+													<span class="form-check-label"> 포트폴리오
+													</span>
+												</label>
+												<label class="mb-2 form-check form-check-inline">
+													<input class="form-check-input" name="mycategory" type="radio">
+													<span class="form-check-label">
+														자격증 </span>
+												</label>
+												<label class="mb-2 form-check form-check-inline">
+													<input class="form-check-input" name="mycategory" type="radio">
+													<span class="form-check-label"> 공인어학
+													</span>
+												</label>
+												<label class="mb-2 form-check form-check-inline">
+													<input class="form-check-input" name="mycategory" type="radio">
+													<span class="form-check-label">
+														자소서 </span>
+												</label>
+												<label class="mb-2 form-check form-check-inline">
+													<input class="form-check-input" name="mycategory" type="radio">
+													<span class="form-check-label">면접</span>
+												</label>
+												<label class="mb-2 form-check form-check-inline">
+													<input class="form-check-input" name="mycategory" type="radio">
+													<span class="form-check-label">
+														이직 </span>
+												</label>
+												<label class="mb-2 form-check form-check-inline">
+													<input class="form-check-input" name="mycategory" type="radio">
+													<span class="form-check-label"> 기타
+													</span>
+												</label>
+											</div>
+										</div> <!-- col.// -->
+									</div> <!-- row.// -->
+									<hr class="mb-4 mt-0">
+									<div class="col-md-9">
+										<div class="d-mb-4">
+											<div class="col-md-6">
+												<h6>4. 목표 날짜 설정</h6>
+											</div>
+											<div class="me-2" id="hw-gs2_5">
+												<label class="form-label hw-date1">목표 시작 날짜
+													선택</label>
+												<input type="datetime-local" id="startDate"
+													class="form-control hw-date2" placeholder="면접 시작 날짜 선택">
+											</div>
+
+											<div style="flex: 1;">
+												<label class="form-label hw-date1">목표 종료 날짜
+													선택</label>
+												<input type="datetime-local" id="endDate" class="form-control hw-date2"
+													placeholder="면접 종료 날짜 선택">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="hw-gs2_6">
+							<button class="btn btn-md rounded font-sm hover-up">초기화</button>
+							<button class="btn btn-md rounded font-sm hover-up">저장</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+	</th:block>
+
+	</html>
